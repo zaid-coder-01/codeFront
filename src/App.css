@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: rgba(227, 227, 227);
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+.aa{
+  font-family: "Courgette", cursive;
+  width: 0ch;
+  font-size: 2rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  border-right: 2px solid black;
+  animation: text 4s steps(11) infinite;
+}
+@keyframes text{
+  0%{
+      width:0ch;
+  }
+  50%{
+      width:5ch;
+  }
+  100%{
+       width:11ch;
+  }
+}
+.indexCont {
+  height: 28rem;
+}
+.hdtext {
+  font-family: "Courgette", cursive;
+  padding-top: 3rem;
+}
+.bran {
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.apicont {
+  height: 100vh;
+}
+.apicate {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(237, 237, 237);
+  height: 4.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.apicate select {
+  width: 15rem;
+  font-size: 1.2rem;
+  height: 2.3rem;
+}
+.apiimg {
+  max-width: 8rem;
+  min-width: 8rem;
+  min-width: 8rem;
+  min-height: 8rem;
+}
+.apicon {
+  height: 70vh;
+}
+.apicode {
+  height: 70vh;
+}
+.apifield {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+.apifield input {
+  width: 40rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+}
+.apihead {
+  display: flex;
+  justify-content: space-between;
+}
+.subapihead {
+  display: flex;
+  justify-content: space-between;
+}
+.apistatus {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.apidetimg {
+  max-width: 5rem;
+  max-height: 5rem;
+  min-width: 5rem;
+  min-height: 5rem;
+}
+.login {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: var(--background);
+}
+.logins {
+  width: 80vw;
+  height: 100vh;
+  position: relative;
+  background-color: var(--background);
+}
+.child {
+  margin-left: 13rem;
+  position: absolute;
+  left: 52%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+.index-btn {
+  display: flex;
+  gap: 2rem;
+  padding-top: 8rem;
+  align-items: center;
+  justify-content: center;
+}
+.index-btn button {
+  border-radius: 0.5rem;
+  font-weight: bold;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  max-width: 14rem;
+  min-width: 14rem;
+  border: 0.1rem solid black;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+span {
+  border-radius: 0.5rem;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(25,135,83);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.index-btn button:hover span {
+  width: 100%;
+}
+.index-btn button:hover {
+  color: white;
+  border: 2px solid blue;
+}
+.setleft {
+  background-color: white;
+  height: 90vh;
+  width: 15rem;
+  padding-top: 2rem;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.19)inset,-6px -6px 10px rgba(0, 0, 0, 0.19);
+}
+.setleft li {
+  list-style: none;
+  padding-top: 1rem;
+}
+.keycont {
+  display: flex;
+  gap: 2rem;
+}
+.keygen {
+  position: absolute;
+  left: 10%;
+}
+.keycont input {
+  width: 15rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+.genkey {
+  float: right;
+  cursor: pointer;
+  color: blue;
+}
+.keybtn button {
+  width: 10rem;
+}
+.designcard a {
+  text-decoration: none;
+  color: black;
+}
+.designcard .col {
+  margin-bottom: 1.5rem;
+}
+.apicardcont .card:hover{
+  border: 1px solid black;
+}
+.designcard .card {
+  padding-top: 2rem;
+  height: 10rem;
+  transition: all 0.6s linear;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset,
+    0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.designcard .card:hover {
+  transform: scale(1.1);
+  border: 1px solid black;
+}
+.col-md-6:first-child {
+  border: 1px solid black;
+  height: 88vh;
+  overflow-y: auto;
+}
+.colorpick input,
+select,
+textarea {
+  width: 15rem;
+  height: 2rem;
+  margin-top: 0.7rem;
+  outline: none;
+  border: 1px solid black;
+}
+.colorpick select {
+  width: 15rem;
+  height: 2rem;
+  margin-top: 0.7rem;
+}
+.colorpick textarea {
+  width: 15rem;
+  height: 3rem;
+  margin-top: 0.7rem;
+}
+
+.colorround {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  border: 1px solid black;
+}
+.colordiv {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset,
+    0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.moreC {
+  gap: 8rem;
+}
+.indeximg {
+  max-width: 6rem;
+  max-height: 6rem;
+  min-width: 6rem;
+  min-height: 6rem;
+}
+.dnavitem ul li {
+  list-style: none;
+}
+.UserPic {
+  margin-left: 3rem;
+}
+.UserPic .pic {
+  max-width: 7rem;
+  max-height: 7rem;
+  min-width: 7rem;
+  min-height: 7rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.adminNav {
+  margin-top: 1.2rem;
+  background-color: white;
+}
+.adminNav li {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+.adminNav li:hover {
+  border: 1px solid black;
+  background-color:rgb(93,96,239);
+  cursor: pointer;
+  color: white;
+  border-radius: 0.2rem;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.19)inset,-6px -6px 10px rgba(0, 0, 0, 0.19);
+}
+.dashS .statics{
+width: 20rem;
+height: 8rem;
+background-color: aliceblue;
+box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.19)inset,-6px -6px 10px rgba(0, 0, 0, 0.19);
+}
+.staG{
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.19)inset,-4px -4px 8px rgba(0, 0, 0, 0.10)inset;
+width: 32rem;
+padding-top: 0.8rem;
+height: 19rem;
+border: 2px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pimg{
+  max-width: 10rem;
+  max-height: 10rem;
+  min-width: 10rem;
+  min-height: 10rem;
+  border-radius: 50%;
+  background-color: lavenderblush;
+}
+td img{
+  max-width: 7rem;
+  max-height: 3rem;
+  min-width: 7rem;
+  min-height: 3rem;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+.pagiBtn button{
+  width: 2rem;
+  font-size: 0.7rem;
+  margin-left: 1rem;
+}
+.cardtext p,.fetch{
+  text-align: justify;
+  text-justify:distribute;
+}
