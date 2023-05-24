@@ -1,27 +1,29 @@
 pipeline {
     agent any
     
-    tools {
-      dockerTool 'zaid'
-    }
-   
-
     stages {
         stage('Checkout') {
             steps {
+                // Checkout source code from the provided Git repository
                 git 'https://github.com/zaid-coder-01/codeFront.git'
             }
         }
-
-        stage('Install') {
+        
+        stage('Build Docker Image') {
             steps {
-                sh 'docker build -t zaid .'
+                // Build Docker image with the Dockerfile in the root of the repository
+                script {
+                    docker.build('zaid', '.')
+                }
             }
         }
-
-        stage('run') {
+        
+        stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 3000:3000 zaid'
+                // Run Docker container using the built image
+                script {
+                    docker.image('zaid').run('-p 8080:80')
+                }
             }
         }
     }
