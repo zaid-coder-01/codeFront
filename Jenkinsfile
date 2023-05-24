@@ -1,10 +1,5 @@
 pipeline {
     agent any
-    
-    tools {
-    dockerTool 'zaid'
-    }
-    
     stages {
         stage('Checkout') {
             steps {
@@ -26,7 +21,7 @@ pipeline {
             steps {
                 // Run Docker container using the built image
                 script {
-                    docker.image('zaid').run('-p 8080:80')
+                    docker.image('zaid').run('-p 3000:3000')
                 }
             }
         }
