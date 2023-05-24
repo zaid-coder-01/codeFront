@@ -1,5 +1,9 @@
 pipeline {
-    agent { dockerfile true }
+    agent any
+    
+    tools {
+      dockerTool 'zaid'
+    }
    
 
     stages {
