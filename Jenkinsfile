@@ -1,10 +1,6 @@
 pipeline {
-    agent any
-    
-    tools {
-    // Define Node.js tool with a specific installation from Global Tool Configuration
-    dockerTool 'zaid'
-  }
+    agent { dockerfile true }
+   
 
     stages {
         stage('Checkout') {
