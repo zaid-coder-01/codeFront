@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     tools {
-     dockerTools 'zaid'   
+     dockerTool 'zaid'   
     }
     
     stages {
