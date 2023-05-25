@@ -1,6 +1,11 @@
 pipeline {
     
     agent any
+    
+     tools {
+        // Specify the Docker installation configured in Jenkins
+        docker 'Docker'
+    }
   
     stages {
         stage('Checkout') {
