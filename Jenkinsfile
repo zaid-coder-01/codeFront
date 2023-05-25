@@ -1,7 +1,7 @@
 pipeline {
     
     agent {
-       label 'docker-agent' 
+       label 'zaidDocker' 
     }
   
     stages {
