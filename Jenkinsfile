@@ -4,7 +4,7 @@ pipeline {
     
      tools {
         // Specify the Docker installation configured in Jenkins
-        dockerTool 'Docker'
+        dockerTool 'zaid'
     }
   
     stages {
