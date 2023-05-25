@@ -1,10 +1,9 @@
 pipeline {
-    agent any
     
-    tools {
-     dockerTool 'zaid'   
+    agent {
+       label 'docker-agent' 
     }
-    
+  
     stages {
         stage('Checkout') {
             steps {
