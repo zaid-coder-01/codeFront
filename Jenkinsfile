@@ -1,6 +1,10 @@
 pipeline {
     
-    agent any
+    agent {
+    node {
+            label 'zaid'
+        }
+    }
     
      environment {
         PATH = "/usr/local/bin/docker"
