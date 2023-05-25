@@ -2,9 +2,8 @@ pipeline {
     
     agent any
     
-     tools {
-        // Specify the Docker installation configured in Jenkins
-        dockerTool 'zaid'
+     environment {
+        PATH = "/usr/local/bin/docker"
     }
   
     stages {
